@@ -1,0 +1,35 @@
+###
+POST http://localhost:5000/api/v2/series/serie HTTP/1.1
+Content-Type: application/json
+
+{
+  
+}
+###
+GET http://localhost:5000/api/v2/series HTTP/1.1
+###
+GET http://localhost:5000/api/v2/series/623c71c6a61cca647a9b3e36 HTTP/1.1
+###
+PUT http://localhost:5000/api/v2/series/623c71c6a61cca647a9b3e36 HTTP/1.1
+Content-Type: application/json
+
+{
+  
+}
+###
+DELETE http://localhost:5000/api/v2/series/623c757601257964b88db64b HTTP/1.1
+
+
+
+
+/////// sendgrid //////
+
+###
+POST http://localhost:5000/api/email/confirmacion HTTP/1.1
+Content-Type: application/json
+
+{
+  "toEmail": "daniel.1702013669@ucaldas.edu.co",
+  "customerName": "Daniel Quintero",
+  "orderNro": "2131223"
+}
